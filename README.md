@@ -7,3 +7,4 @@
 ## HomeWork
 
 ### 과제02
+1. 구구단  | <a href="">gugudan.py</a>
