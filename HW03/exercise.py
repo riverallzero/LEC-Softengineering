@@ -1,7 +1,7 @@
 # Modify the variables so that all of the statements evaluate to True.
 
 var1 = 20
-var2 = 'pumkin'
+var2 = 'pylon'
 var3 = ['dayoung', 'hyejin', 'taegon', 'jaeyoung', 'sola']
 var4 = ('Hey', 'I am dayoung', 'Hello, Python!')
 var5 = {'egg': 'salad', 'tuna': 'fish', 'happy': 7}
