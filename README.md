@@ -8,7 +8,7 @@
 ## HomeWork
 
 <details>
-<summary><a href='https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW02'>HW02</a></summary>
+<summary>HW02 <a href='https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW02'>(Go)</a></summary>
   - 구구단 | <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW02/gugudan.py">gugudan.py</a><br>
   - 팩토리얼 구하기 | <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW02/factorial.py">factorial.py</a><br>
   - 100부터 200까지의 숫자 중 소수 개수 구하기 | <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW02/prime_number.py">prime_number.py</a><br>
@@ -18,7 +18,7 @@
 </details>
 
 <details>
-<summary><a href='https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW03'>HW03</a></summary>
+<summary>HW03 <a href='https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW03'>(Go)</a></summary>
   - 구구단 예외 설정하기 | <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW03/gugudan_exception.py">gugudan_exception.py</a><br>
   - HW02 구구단 GUI | <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW03/gugudan_gui.py">gugudan_gui.py</a><br>
   - 구구단 예외 설정 GUI | <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW03/gugudan_exception_gui.py">gugudan_exception_gui.py</a><br>
