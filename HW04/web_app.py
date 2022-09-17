@@ -25,67 +25,74 @@ def population(year):
 
     year = int(year)
 
-    sex = []
-    for r in df['항목']:
-        sex.append(r[:2])
-    df.insert(2, 'sex', sex)
+    year_list = [2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021]
+    if year not in year_list:
+        resp_text = ""
+        resp_text += "<br><br><br><br><br><br>"
+        resp_text += "<center><font size=10><h><strong>연도를 다시 입력하세요 (2012~2021)</strong></h></font></center>"
 
-    del df['항목']
+    else:
+        sex = []
+        for r in df['항목']:
+            sex.append(r[:2])
+        df.insert(2, 'sex', sex)
 
-    df.rename(columns={'시점': 'year', '행정구역(시군구)별': 'location', '데이터': 'value'}, inplace=True)
+        del df['항목']
 
-    loc = []
-    for l in df['location']:
-        loc.append(l)
+        df.rename(columns={'시점': 'year', '행정구역(시군구)별': 'location', '데이터': 'value'}, inplace=True)
 
-    del df['location']
+        loc = []
+        for l in df['location']:
+            loc.append(l)
 
-    df.insert(0, 'location', loc)
+        del df['location']
 
-    df_year = df[f'{year}']
+        df.insert(0, 'location', loc)
 
-    vals = []
-    for data in df_year:
-        vals.append(round(data/10000))
+        df_year = df[f'{year}']
 
-    locs = []
-    for loc in df['location']:
-        locs.append(loc)
+        vals = []
+        for data in df_year:
+            vals.append(round(data/10000))
 
-    sexs = []
-    for sex in df['sex']:
-        sexs.append(sex)
+        locs = []
+        for loc in df['location']:
+            locs.append(loc)
 
-    df = pd.DataFrame(
-        dict(vals=vals, locs=locs, sexs=sexs)
-    )
+        sexs = []
+        for sex in df['sex']:
+            sexs.append(sex)
 
-    df['인구(만)명'] = f'{year}년도 인구 [(만)명]'
+        df = pd.DataFrame(
+            dict(vals=vals, locs=locs, sexs=sexs)
+        )
 
-    fig = px.treemap(
-        df,
-        path=['인구(만)명', 'sexs', 'locs', 'vals'],
-        values='vals',
-        color='vals'
-    )
+        df['인구(만)명'] = f'{year}년도 인구 [(만)명]'
 
-    fig.update_traces(root_color='gold')
-    fig.update_layout(
-        margin=dict(t=25, l=25, r=25),
-        title_font=dict(family='Arial', size=35),
-        font=dict(size=25, family='Verdana'),
-    )
+        fig = px.treemap(
+            df,
+            path=['인구(만)명', 'locs', 'sexs', 'vals'],
+            values='vals',
+            color='vals'
+        )
 
-    fig_html = fig.to_html()
+        fig.update_traces(root_color='gold')
+        fig.update_layout(
+            margin=dict(t=25, l=25, r=25),
+            title_font=dict(family='Arial', size=35),
+            font=dict(size=25, family='Verdana'),
+        )
 
-    resp_text = ""
-    resp_text += "<html>\n"
-    resp_text += "<body>\n"
-    resp_text += "<br>"
-    resp_text += f"<font size=8><center><h><strong>{year}년도 도시별 인구 트리맵</strong></h></center></font>\n"
-    resp_text += f"{fig_html}"
-    resp_text += "</body>\n"
-    resp_text += "</html>\n"
+        fig_html = fig.to_html()
+
+        resp_text = ""
+        resp_text += "<html>\n"
+        resp_text += "<body>\n"
+        resp_text += "<br>"
+        resp_text += f"<font size=8><center><h><strong>{year}년도 도시별 인구 트리맵</strong></h></center></font>\n"
+        resp_text += f"{fig_html}"
+        resp_text += "</body>\n"
+        resp_text += "</html>\n"
 
     return resp_text
 

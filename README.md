@@ -33,6 +33,6 @@
     - 웹 어플리케이션 과제 | <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW04/web_app.py">web_app.py</a><br>
         1. 필요한 데이터 <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW04/do_population.csv">do_population.csv</a><br>
         2. Home 화면<br><img src="https://user-images.githubusercontent.com/93754504/190847719-a96dd545-7645-4158-a558-000988b45215.png">
-        3. "population/원하는 연도" 실행 화면<br><img src="https://user-images.githubusercontent.com/93754504/190847720-2e2235d2-d590-47fb-bea8-004a23e1f77f.png">
+        3. "population/원하는 연도" 실행 화면<br><img src="https://user-images.githubusercontent.com/93754504/190862683-f6f2e112-30d6-4e99-b37e-35036d335b74.png">
 
 </details>
