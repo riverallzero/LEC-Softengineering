@@ -25,3 +25,14 @@
   - 구구단 예외 설정 GUI(rich로 꾸미기) | <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW03/gugudan_rich.py">gugudan_rich.py</a><br>
   - 조건에 맞는 var값 설정하기 | <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW03/exercise.py">exercise.py</a><br>
 </details>
+
+<details>
+<summary>HW04 <a href='https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW04'>(Go)</a></summary>
+    - 구구단 python으로 html 구현 | <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW04/gugudan_html.py">gugudan_html.py</a><br>
+    - 구구단 Flask로 Url에 입력변수 받고 구현 | <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW04/flask_ex.py">flask_ex.py</a><br>
+    - 웹 어플리케이션 과제 | <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW04/web_app.py">web_app.py</a><br>
+        1. 필요한 데이터 <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW04/do_population.csv">do_population.csv</a><br>
+        2. Home 화면<br><img src="https://user-images.githubusercontent.com/93754504/190847719-a96dd545-7645-4158-a558-000988b45215.png">
+        3. "population/원하는 연도" 실행 화면<br><img src="https://user-images.githubusercontent.com/93754504/190847720-2e2235d2-d590-47fb-bea8-004a23e1f77f.png">
+
+</details>
