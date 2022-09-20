@@ -70,7 +70,7 @@ def population():
 
         fig.update_layout(
             margin=dict(t=25, l=25, r=25),
-            title_font=dict(family='Arial', size=35),
+            title_font=dict(family='Arial', size=25),
             font=dict(size=25, family='Verdana'),
         )
 
