@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>웹에서 입력하기</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<form id="form_id" action="javascript:post_query()">
+    <input type="text" name="c" value="200">
+    <button type="submit">Go</button>
+</form>
+<h3>Result</h3>
+<div id="results"></div>
+<script>
+function post_query() {
+    $.ajax({
+    type: "GET",
+    url: "http://127.0.0.1:5000/c2k",
+    data: $('#form_id').serialize(),
+    success: update_result,
+    dataType: "html"
+    });
+}
+
+function update_result(data) {
+    $("#results").html(data);
+}
+</script>
+</body>
+</html>
+
+<!--form_input.py 실행 후 html 크롬에서 열기-->
