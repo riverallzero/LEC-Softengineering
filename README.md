@@ -28,11 +28,27 @@
 
 <details>
 <summary>HW04 <a href='https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW04'>(Go)</a></summary>
-    - 구구단 python으로 html 구현 | <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW04/gugudan_html.py">gugudan_html.py</a><br>
-    - 구구단 Flask로 Url에 입력변수 받고 구현 | <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW04/flask_ex.py">flask_ex.py</a><br>
-    - 웹 어플리케이션 과제 | <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW04/web_app.py">web_app.py</a><br>
-        1. 필요한 데이터(KOSIS) <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW04/do_population.csv">do_population.csv</a><br>
-        2. Home 화면<br><img src="https://user-images.githubusercontent.com/93754504/190847719-a96dd545-7645-4158-a558-000988b45215.png">
-        3. "population/원하는 연도" 실행 화면<br><img src="https://user-images.githubusercontent.com/93754504/190862683-f6f2e112-30d6-4e99-b37e-35036d335b74.png">
 
+1. 수업
+    - 구구단 python으로 html 구현 | <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW04/gugudan_html.py">gugudan_html.py</a>
+    - 구구단 Flask로 Url에 입력변수 받고 구현 | <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW04/flask_ex.py">flask_ex.py</a>
+    - 웹 어플리케이션 과제 | <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW04/web_app.py">web_app.py</a>
+2. 과제
+   - 필요한 데이터(KOSIS) <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW04/do_population.csv">do_population.csv</a> 
+   - Home 화면<br><img src="https://user-images.githubusercontent.com/93754504/190847719-a96dd545-7645-4158-a558-000988b45215.png">
+   - "population/원하는 연도" 실행 화면<br><img src="https://user-images.githubusercontent.com/93754504/190862683-f6f2e112-30d6-4e99-b37e-35036d335b74.png">
+</details>
+
+<details>
+<summary>HW05 <a href='https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW05'>(Go)</a></summary>
+
+1. 수업
+    - 온도 단위 변환 GET, POST방식 | <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW05/form_input.py">form_input.py</a>
+    - Input텍스트와 버튼을 통해 값을 입력받고 결과를 다른 창에 (/c2k?c=입력값) 표시 <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW05/input_ex.html">HTML</a>
+    - Input텍스트와 버튼을 통해 값을 입력받고 결과를 화면에 표시 <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW05/input_output_ex.html">HTML</a>
+2. 과제
+   - HW04 웹 어플리케이션 과제 => 웹상에서 값을 입력하고 출력  | <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW05/web_app.py">web_app.py</a>
+   - HW04 웹 어플리케이션 과제 => HTML  | <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW05/index.html">index.html</a>
+   - Home 화면 <br><img src="https://user-images.githubusercontent.com/93754504/191248407-3ca63b77-eafe-43ec-afc0-28a45742c8c3.png">
+   - 실행 화면 <br><img src="https://user-images.githubusercontent.com/93754504/191248486-0f881530-1188-49e4-b094-234a84ef4557.png">
 </details>
