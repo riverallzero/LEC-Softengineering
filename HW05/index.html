@@ -6,13 +6,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-<br><br>
+<br>
 <center><h3>Population TreeMap</h3></center>
 <form id="form_id" action="javascript:post_query()">
     <center><input type="text" name="year" style="height:15px; width:130px" placeholder="2012~2021 연도 입력">
             <button type="submit">Show</button></center>
-</form>
-<div id="results"></div>
+</form><br>
+<center><div id="results"></div></center>
 <script>
 function post_query() {
     $.ajax({
