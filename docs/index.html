@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>개인 홈페이지</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="what_time.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <h1 id="title" class="header">제목</h1>
+        <h2 class="header">소제목</h2>
+
+        <p>
+            안녕하시렵니까 강다영입니다.
+        </p>
+
+        <hr/>
+        <br/>
+
+        <img src="images/iphone.jpg" width="300px">
+
+        <br/>
+
+        <input id="input_a" onkeyup="javascript:doSomething()"> + <input id="input_b" onkeyup="javascript:doSomething()">
+
+        <p id="result"></p>
+
+        <hr/>
+
+        <button onclick="javascript:whatTimeIsIt()">
+            현재시간
+        </button>
+
+        <script>
+            function doSomething() {
+                let a = document.getElementById("input_a").value
+                let b = document.getElementById("input_b").value
+                document.getElementById("result").innerHTML = Number(a) + Number(b);
+            }
+        </script>
+    </body>
+</html>
