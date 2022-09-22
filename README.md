@@ -52,3 +52,15 @@
    - Home 화면 <br><img src="https://user-images.githubusercontent.com/93754504/191248407-3ca63b77-eafe-43ec-afc0-28a45742c8c3.png">
    - 실행 화면 <br><img src="https://user-images.githubusercontent.com/93754504/191248486-0f881530-1188-49e4-b094-234a84ef4557.png">
 </details>
+
+<details>
+<summary>HW06 <a href='https://github.com/RIVERALLZERO/SoftEngineering/tree/main/docs'>(Go)</a></summary>
+
+1. 수업
+    - HTML로 home, about, blog 메뉴 구성
+    - CSS로 style 지정 <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/docs/style.css">style.css</a>
+    - JavaScript를 통해 현재 시간 알림창 띄우기 <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/docs/what_time.js">what_time.js</a>
+2. 과제
+   - 개인 홈페이지 만들기  | <a href="https://riverallzero.github.io/SoftEngineering/">홈페이지</a>
+</details>
+
