@@ -2,48 +2,39 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>개인 홈페이지</title>
+        <title>Dayoung Kang</title>
         <link href="style.css" rel="stylesheet" type="text/css">
         <script src="what_time.js"></script>
+        <script src="typed_text.js"></script>
+        <link href="images/logome.png" rel="icon">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     </head>
 
     <body>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="blog.html">Blog</a>
+        <header>
+            <h1></h1>
+        </header>
+
+        <div class="nav" >
+            <a href="project.html">Project</a>
             <a href="about.html">About</a>
-        </nav>
+            <a class="active" href="index.html">Home</a>
+        </div>
 
-        <h1 id="title" class="header">제목</h1>
-        <h2 class="header">소제목</h2>
+        <section>
+            <h1>Dayoung Kang</h1>
+            <br><br>
+            <div class="card">
+                <img src="images/home.png" alt="John" style="width:100%">
+                <h1>Dayoung kang</h1>
+                <p class="title">Student</p>
+                <p>Jeonbuk National University</p>
+                <p><button onclick="location.href='mailto:kallzero1008@jbnu.ac.kr';">Contact</button></p>
+            </div>
+        </section>
 
-        <p>
-            안녕하시렵니까 강다영입니다.
-        </p>
-
-        <hr/>
-        <br/>
-
-        <img src="images/iphone.jpg" width="300px">
-
-        <br/>
-
-        <input id="input_a" onkeyup="javascript:doSomething()"> + <input id="input_b" onkeyup="javascript:doSomething()">
-
-        <p id="result"></p>
-
-        <hr/>
-
-        <button onclick="javascript:whatTimeIsIt()">
-            현재시간
-        </button>
-
-        <script>
-            function doSomething() {
-                let a = document.getElementById("input_a").value
-                let b = document.getElementById("input_b").value
-                document.getElementById("result").innerHTML = Number(a) + Number(b);
-            }
-        </script>
+        <div class="footer">
+            <p>© Copyright DayoungKang</p>
+        </div>
     </body>
 </html>
