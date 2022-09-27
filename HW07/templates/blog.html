@@ -4,7 +4,9 @@
 <h2>Blog</h2>
 
 {% if posts|length == 0 %}
-<p>글감 부족으로 인한 공사 지연</p>
+<h2>< 글감 부족으로 인한 공사중 ></h2>
+<center><img src="{{ url_for('static', filename='images/under-construction.png') }}" alt="me" style="width:6%"></center>
+
 {% else %}
 <div>
   <div>

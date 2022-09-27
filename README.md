@@ -64,3 +64,10 @@
    - 개인 홈페이지 만들기  | <a href="https://riverallzero.github.io/SoftEngineering/">홈페이지</a>
 </details>
 
+<details>
+<summary>HW07 <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW07">(Go)</a></summary>
+
+- HW06과제인 개인 홈페이지를 Flask를 이용해 구현 <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW07/hompage_app.py">hompage_app.py</a>
+- 중복 코드는 <a href="https://github.com/RIVERALLZERO/SoftEngineering/tree/main/HW07/templates/layout.html">layout.html</a>로 묶어서 호출해 사용
+</details>
+

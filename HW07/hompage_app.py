@@ -21,7 +21,7 @@ posts = [
         'date_posted': datetime.strptime('2022-09-27', '%Y-%m-%d')
     },
 ]
-# posts = []
+posts = []
 
 
 @app.route("/")
