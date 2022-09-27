@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<br><br><br><br>
+<div class="row">
+    <div class="column">
+        <div class="content">
+            <img src="{{ url_for('static', filename='images/lms.png') }}" alt="Mountains" style="width:60%">
+            <h3><a href="https://github.com/RIVERALLZERO/LmsNotion">Lms Notion</a></h3>
+            <p>Let you know which missed in Lms (video, report, quiz) Use Telegram-Bot, Selenium</p>
+    </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <img src="{{ url_for('static', filename='images/googlecalendar.png') }}" alt="Lights" style="width:60%">
+            <h3><a href="https://github.com/RIVERALLZERO/SolarCalendar">Solar Calendar</a></h3>
+            <p>Switch Lunar to Solar date and help add event to GoogleCalendar</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="content">
+            <img src="{{ url_for('static', filename='images/loading.png') }}" alt="Lights" style="width:60%">
+            <h3><a href="">Comming Soon</a></h3>
+            <p></p>
+        </div>
+    </div>
+</div>
+{% endblock %}

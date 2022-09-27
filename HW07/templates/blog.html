@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Blog</h2>
+
+{% if posts|length == 0 %}
+<p>글감 부족으로 인한 공사 지연</p>
+{% else %}
+<div>
+  <div>
+    {% for post in posts %}
+      <article>
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.content}}</p>
+        <div>
+          <p>{{ post.author.username }}</p>
+          <p>{{ post.date_posted.strftime('%Y-%m-%d') }}</p>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+{% endblock %}

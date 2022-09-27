@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<br><br>
+<div class="card">
+    <img src="{{ url_for('static', filename='images/home.png') }}" alt="me" style="width:100%">
+    <h1>Dayoung kang</h1>
+    <p class="title">Student</p>
+    <p>Jeonbuk National University</p>
+    <p><button onclick="location.href='mailto:kallzero1008@jbnu.ac.kr';">Contact</button></p>
+</div>
+{% endblock %}

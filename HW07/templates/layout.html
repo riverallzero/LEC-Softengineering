@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dayoung Kang</title>
+        <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ url_for('static', filename='images/logome.png') }}" rel="icon">
+        <!--Javascript block-->
+        <!--{% block javascript %}{% endblock %}-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1></h1>
+        </header>
+
+        <div class="nav" >
+            <a href="{{ url_for('blog') }}">B-log</a>
+            <a href="{{ url_for('project') }}">Project</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('home') }}">Home</a>
+        </div>
+
+        <section>
+            <h1>Dayoung Kang</h1>
+            <!--Main content block-->
+            {% block content %}{% endblock %}
+        </section>
+
+
+        <div class="footer">
+            <p>© Copyright DayoungKang</p>
+        </div>
+    </body>
+</html>
