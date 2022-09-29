@@ -1,0 +1,141 @@
+/*-------------------*/
+/*body*/
+/*-------------------*/
+body {
+    font-family: "Open Sans", sans-serif;
+}
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+h2 {
+    text-align: center;
+    padding: 3%;
+}
+p {
+    font-size: 20px;
+}
+/*-------------------*/
+/*header*/
+/*-------------------*/
+header {
+    background-color: white;
+    color: white;
+    text-align: center;
+}
+
+/*-------------------*/
+/*section*/
+/*-------------------*/
+section {
+    padding: 0px 40px;
+}
+
+/*-------------------*/
+/*nav*/
+/*-------------------*/
+nav {
+    width: 100%;
+    display: inline-block;
+}
+.navigation-bar ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display:inline-block;
+  vertical-align:top;
+}
+.nav a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: 900;
+    float: right;
+    padding: 8px 22px 10px 20px;
+}
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*-------------------*/
+/*home*/
+/*-------------------*/
+.card {
+    box-shadow: 0 15px 20px 15px rgba(0, 0, 0, 0.2);
+    max-width: 260px;
+    margin: auto;
+    text-align: center;
+}
+.title {
+    color: grey;
+    font-size: 18px;
+}
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    background-color: #003586;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+button:hover, a:hover {
+    opacity: 0.7;
+}
+
+/*-------------------*/
+/*about*/
+/*-------------------*/
+.contents {
+    padding: 0px 15% 0px 15%;
+    text-align: center;
+}
+
+/*-------------------*/
+/*project*/
+/*-------------------*/
+.row,
+.row > .column {
+    margin: 0 auto;
+    display: flex;
+}
+.column {
+    float: left;
+    width: 23%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.content {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/*-------------------*/
+/*footer*/
+/*-------------------*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #003586;
+    color: white;
+    text-align: center;
+}
