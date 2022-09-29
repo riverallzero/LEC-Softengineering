@@ -8,49 +8,37 @@
         {% block javascript %}{% endblock %}
         <!--Font Awesome-->
         <script src="https://kit.fontawesome.com/869ce555c2.js" crossorigin="anonymous"></script>
-        <!--Font Google-->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
         <!--CSS Bootstrap-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light my-3">
             <div class="container">
-                <a class="navbar-brand" href="{{ url_for('home') }}">Do It Django</a>
+                <a class="navbar-brand" href="{{ url_for('home') }}"><strong>Dayoung K.</strong></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="{{ url_for('home') }}">
-                            <i class="fa-solid fa-home"></i>
-                                Home <span class="sr-only">(current)</span></a>
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('blog') }}">Blog</a>
+                            <a class="nav-link" href="{{ url_for('about') }}"><strong>About</strong></a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url_for('about') }}">
-                                <i class="fa-solid fa-pen"></i>About Me</a>
+                            <a class="nav-link" href="{{ url_for('blog') }}"><strong>Blog</strong></a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown link
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('project') }}"><strong>Project</strong></a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Log In</a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ url_for('home') }}">
+                            <i class="fa-solid fa-home"></i>
+                                <strong>Home</strong> <span class="sr-only">(current)</span></a>
                         </li>
                     </ul>
 
@@ -65,9 +53,5 @@
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
         </section>
-
-<!--        <div class="container">-->
-<!--            <p>© Copyright DayoungKang</p>-->
-<!--        </div>-->
     </body>
 </html>

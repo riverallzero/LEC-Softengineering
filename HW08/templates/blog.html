@@ -3,18 +3,25 @@
 {% block content %}
 {% if posts|length == 0 %}
 <h2>< 글감 부족으로 인한 공사중 ></h2>
-<center><img src="{{ url_for('static', filename='images/under-construction.png') }}" alt="me" style="width:6%"></center>
 
 {% else %}
 <div class="container">
+  <div class="card-header">
+    <strong>| Blog |</strong>
+  </div>
+
   <div>
     {% for post in posts %}
       <article>
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.content}}</p>
-        <div>
-          <p>{{ post.author.username }}</p>
-          <p>{{ post.date_posted.strftime('%Y-%m-%d') }}</p>
+        <div class="list-group my-3">
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">{{ post.title }}</h5>
+              <small>{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
+            </div>
+            <p class="mb-1">{{ post.content}}</p>
+            <small>{{ post.author.username }}</small>
+          </a>
         </div>
       </article>
     {% endfor %}
