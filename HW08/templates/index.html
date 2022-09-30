@@ -1,21 +1,51 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="container my-5">
-    <div class="card text-center">
-        <br>
-        <h1 class="card-title">Dayoung Kang</h1>
 
-        <div class="card-body">
-            <img src="{{ url_for('static', filename='images/logome.png') }}" alt="me" style="width:20%">
-            <p></p>
-            <a href="https://www.jbnu.ac.kr/kor/" class="badge badge-pill badge-success">Jeobuk National Univ. <i class="fa-solid fa-building-columns"></i></a>
-            <a href="https://github.com/riverallzero" class="badge badge-pill badge-success">GitHub <i class="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/riverallz" class="badge badge-pill badge-success">Instagram <i class="fa-brands fa-instagram"></i></a>
-        </div>
-        <div class="card-footer text-muted">
-            <a href="mailto:kallzero1008@jbnu.ac.kr">Send E-MAIL <i class="fa-solid fa-paper-plane"></i></a><br>
-        </div>
+
+<div class="container my-3">
+    <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-black" style="background-color: white;">
+        <img src="{{ url_for('static', filename='images/me.jpg') }}" width="15%" grayscale(100%)>
     </div>
+
+    <footer class="text-center text-lg-start bg-white text-muted">
+      <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with me on social networks:</span>
+        </div>
+
+        <div>
+          <a href="https://www.jbnu.ac.kr/kor/" class="badge badge-pill badge-dark">Jeobuk National Univ. <i class="fa-solid fa-building-columns"></i></a>
+          <a href="https://github.com/riverallzero" class="badge badge-pill badge-danger">GitHub <i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/riverallz" class="badge badge-pill badge-primary">Instagram <i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </section>
+
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fa-solid fa-id-card-clip"></i> Dayoung Kang
+              </h6>
+              <p>
+                Welcome to visit my hompage, look around and get some information
+              </p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3 text-secondary"></i> Jeonju, Republic of Korea</p>
+              <p>
+                <i class="fas fa-envelope me-3 text-secondary"></i>
+                <a href="mailto:kallzero1008@jbnu.ac.kr">kallzero1008@jbnu.ac.kr</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </footer>
 </div>
+
 {% endblock %}
