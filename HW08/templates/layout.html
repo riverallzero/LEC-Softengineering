@@ -15,7 +15,7 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-light my-3">
             <div class="container">
-                <a class="navbar-brand" href="{{ url_for('home') }}"><strong>Dayoung K.</strong></a>
+                <a class="navbar-brand" href="{{ url_for('home') }}"><i class="fa-solid fa-home"></i><strong> Dayoung K.</strong></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -36,15 +36,44 @@
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="{{ url_for('home') }}">
-                            <i class="fa-solid fa-home"></i>
-                                <strong>Home</strong> <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#LoginModal">
+                                <strong>Login</strong> <span class="sr-only">(current)</span></a>
                         </li>
                     </ul>
 
                 </div>
             </div>
         </nav>
+
+        <!-- Modal -->
+        <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="LoginModalLabel">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Sign Up</p>
+                        <button type="button" class="btn btn-outline-dark btn-block btn-sm"><i class="fas fa-envelope"></i>&nbsp;&nbsp; Sign Up with E-mail</button>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Login</p>
+                        <button type="button" class="btn btn-outline-dark btn-block btn-sm"><i class="fa-brands fa-google"></i>&nbsp;&nbsp;Log in with Google</button>
+                        <button type="button" class="btn btn-outline-dark btn-block btn-sm"><i class="fas fa-envelope"></i>&nbsp;&nbsp; Log in with E-mail</button>
+                    </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <section>
             <!--Main content block-->
